@@ -11,6 +11,9 @@ To design and simulate a Differentiator circuit using μA741 in Proteus Design S
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="1045" height="488" alt="image" src="https://github.com/user-attachments/assets/0e7cd155-5687-45eb-8ca1-49459e0228e8" />
+
+
 ## Connection Details:
 •	Input signal → Capacitor (C) → Inverting terminal (Pin 2)
 •	Feedback resistor (Rf) → Between Output (Pin 6) and Pin 2
@@ -32,8 +35,15 @@ A Differentiator circuit produces an output voltage proportional to the rate of 
 6.	Run simulation.
 7.	Observe input and output waveforms on CRO.
 ## Tabulation
-S.No 	         Input Signal	              Frequency	            Expected  Output	            Practical Observation
+Sl. No	Input Voltage (Vin)	Time Interval	Output Voltage (Vout)
+1	+5 V	0 – 0.5 ms	0 V → –2.5 V (decreasing ramp)
+2	+5 V	0.5 – 1 ms	–2.5 V → –5 V
+3	–5 V	1 – 1.5 ms	–5 V → –2.5 V (increasing ramp)
+4	–5 V	1.5 – 2 ms	–2.5 V → 0 V
+5	+5 V	Next cycle	Pattern repeats
 ## Waveforms
+<img width="1372" height="875" alt="image" src="https://github.com/user-attachments/assets/9b878acc-5c61-47e9-9937-4402a09cb0b2" />
+
 •	Sine input → Cosine output (90° phase shift)
 •	Square input → Positive & negative spikes
 •	Triangular input → Square wave
